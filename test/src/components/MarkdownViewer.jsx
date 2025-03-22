@@ -10,18 +10,26 @@ const MarkdownViewer = ({ filePath }) => {
 
   useEffect(() => {
     if (filePath) {
+      console.log('Intentando cargar:', filePath);
       setLoading(true);
       setError(null);
-      fetch(process.env.PUBLIC_URL + filePath)
+
+      fetch(filePath)
         .then((response) => {
-          if (!response.ok) throw new Error('No se pudo cargar el archivo');
+          console.log('Estado de la respuesta:', response.status);
+          console.log('URL solicitada:', response.url);
+          if (!response.ok) {
+            throw new Error(`No se pudo cargar el archivo: ${response.status} ${response.statusText}`);
+          }
           return response.text();
         })
         .then((text) => {
+          console.log('Contenido cargado:', text);
           setContent(text);
           setLoading(false);
         })
         .catch((error) => {
+          console.error('Error en fetch:', error);
           setError(error.message);
           setLoading(false);
         });
