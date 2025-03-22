@@ -1,14 +1,29 @@
 import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
-import MainContent from '../components/MainContent';
+import MarkdownViewer from '../components/MarkdownViewer';
+import '../App.css'; // Asegúrate de mover los estilos aquí o crear MainPage.css
 
 const MainPage = () => {
-  const [selectedCode, setSelectedCode] = useState(null);
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleSelect = (filePath) => {
+    setSelectedFile(filePath);
+  };
 
   return (
-    <div className="main-page">
-      <Sidebar onSelect={setSelectedCode} />
-      <MainContent code={selectedCode} />
+    <div className="app">
+      <div className="sidebar-container">
+        <Sidebar onSelect={handleSelect} />
+      </div>
+      <div className="content-container">
+        {selectedFile ? (
+          <MarkdownViewer filePath={selectedFile} />
+        ) : (
+          <div className="welcome-message">
+            Selecciona un archivo de la barra lateral para visualizarlo
+          </div>
+        )}
+      </div>
     </div>
   );
 };
