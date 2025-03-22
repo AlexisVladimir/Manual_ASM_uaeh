@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import './MarkdownViewer.css';
 
-const MarkdownViewer = ({ filePath }) => {
+const MarkdownViewer = ({ filePath = '/static/markdown/presentacion.md' }) => {
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);

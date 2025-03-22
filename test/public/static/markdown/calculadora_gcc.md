@@ -130,6 +130,7 @@
 *(Nota: Usa `-m32` en `gcc` para asegurar compatibilidad con 32 bits.)*
 
 ## 8. Salida
+![Ejemplo de ejecución](/static/images/calculadora_gcc.png)
 
 ## 9. Código
 

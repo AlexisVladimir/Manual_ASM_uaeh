@@ -68,6 +68,7 @@
 *(Nota: Usa `-m32` para compatibilidad con 32 bits y `-no-pie` para evitar problemas con ejecutables PIE en algunos sistemas.)*
 
 ## 8. Salida
+![Ejemplo de ejecución](/static/images/raiz_gcc.png)
 
 *(Nota: El resultado es la raíz cuadrada de 25.0. Si cambias `num` a otro valor, como `num dd 16.0`, mostrará "Raíz cuadrada: 4.000000".)*
 

@@ -67,7 +67,7 @@
 *(Nota: Usa `-m32` para compatibilidad con 32 bits y `-no-pie` para evitar problemas con ejecutables PIE en algunos sistemas.)*
 
 ## 8. Salida
-
+![Ejemplo de ejecución](/static/images/suma_gcc.png)
 *(Nota: El resultado es la suma de 500 + 10 = 510. Si cambias `num1` o `num2`, el resultado variará.)*
 
 ## 9. Código

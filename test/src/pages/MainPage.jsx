@@ -4,7 +4,7 @@ import MarkdownViewer from '../components/MarkdownViewer';
 import '../App.css'; // Asegúrate de mover los estilos aquí o crear MainPage.css
 
 const MainPage = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState('/static/markdown/presentacion.md');
 
   const handleSelect = (filePath) => {
     setSelectedFile(filePath);

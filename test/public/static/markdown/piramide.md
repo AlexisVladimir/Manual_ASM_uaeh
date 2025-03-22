@@ -105,6 +105,7 @@
 *(Nota: Usa `-m32` para compatibilidad con 32 bits y `-no-pie` para evitar problemas con ejecutables PIE en algunos sistemas.)*
 
 ## 8. Salida
+![Ejemplo de ejecución](/static/images/piramide_gcc.png)
 
 *(Nota: La salida muestra una pirámide centrada con el número de filas ingresado. El ejemplo usa 4 filas.)*
 
