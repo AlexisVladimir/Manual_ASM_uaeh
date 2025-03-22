@@ -1,4 +1,3 @@
-/* src/components/MarkdownViewer.css */
 .markdown-viewer {
   max-width: 800px;
   margin: 0 auto;
@@ -31,4 +30,12 @@
 /* Estilo general para el texto dentro de code */
 .markdown-viewer code {
   font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilo para imágenes dentro del markdown */
+.markdown-viewer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }

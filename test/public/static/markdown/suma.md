@@ -1,4 +1,4 @@
-# Memoria Técnica del Código ASM
+# Memoria Técnica del Código Sumar ASM
 
 ## 1. Información General
 
@@ -112,8 +112,7 @@
 
 ## 8. Ejemplo de Ejecución
 
-- **Ejecución sin error**
-- **Ejecución con error**
+![Ejemplo de ejecución](/static/images/Sumar.png)
 
 ## 9. Código
 
