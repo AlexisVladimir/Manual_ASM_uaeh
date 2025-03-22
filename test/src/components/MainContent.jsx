@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainContent.css'; // Estilos específicos para el MainContent
 
-const MainContent = ({ content }) => (
+const MainContent = ({ content, title }) => (
   <main className="main-content">
     <h1>Manual de Ensamblador NASM x86</h1>
     <p>
@@ -11,8 +11,8 @@ const MainContent = ({ content }) => (
       A continuación, se presentan los códigos revisados en este manual:
     </p>
     <section className="key-resources">
-      <h2>Contenido Seleccionado</h2>
-      <p>{content}</p>
+      {title ? <pre>{title}</pre> : <h2>Contenido seleccionado</h2>} 
+      {content ? <pre>{content}</pre> : <p>Seleccione un código para ver los detalles.</p>}
     </section>
   </main>
 );

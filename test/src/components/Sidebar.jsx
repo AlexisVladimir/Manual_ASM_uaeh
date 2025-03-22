@@ -1,17 +1,18 @@
 import React from 'react';
 import './Sidebar.css'; // Estilos específicos para el Sidebar
+import asmCodes from './data/asmCodes'; // Importar los códigos de ensamblador como exportación por defecto
 
 const Sidebar = ({ onSelect }) => {
   const sections = [
     {
       title: 'NASM x86',
       links: [
-        { href: '#hola', text: 'hola.asm', content: 'Contenido de hola.asm' },
-        { href: '#ciclo', text: 'ciclo.asm', content: 'Contenido de ciclo.asm' },
-        { href: '#leer', text: 'leer.asm', content: 'Contenido de leer.asm' },
-        { href: '#suma', text: 'suma.asm', content: 'Contenido de suma.asm' },
-        { href: '#calculadora', text: 'calculadora.asm', content: 'Contenido de calculadora.asm' },
-        { href: '#suma-y-ciclo', text: 'suma_y_ciclo.asm', content: 'Contenido de suma_y_ciclo.asm' },
+        { href: '#hola', text: 'hola.asm', title: asmCodes[0].title, content: asmCodes[0].code   },
+        { href: '#ciclo', text: 'ciclo.asm', title: asmCodes[0].title, content: asmCodes[0].code},
+        { href: '#leer', text: 'leer.asm', title: asmCodes[0].title, content: asmCodes[0].code },
+        { href: '#suma', text: 'suma.asm', title: asmCodes[0].title, content: asmCodes[0].code },
+        { href: '#calculadora', text: 'calculadora.asm', title: asmCodes[0].title, content: asmCodes[0].code },
+        { href: '#suma-y-ciclo', text: 'suma_y_ciclo.asm', title: asmCodes[0].title, content: asmCodes[0].code },
       ],
     },
     {
